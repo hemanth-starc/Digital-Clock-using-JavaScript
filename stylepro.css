@@ -1,0 +1,81 @@
+:root {
+    --clr-1: #2e94e3;
+    --clr-2: rgb(255, 38, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(5, 2, 5);
+}
+
+body.light {
+    background: #fafafa;
+    color: #111;
+}
+
+.datetime {
+    color: var(--clr-2);
+    background: transparent;
+    font-family: "Orbitron", sans-serif;
+    font-size: 2.6rem;
+    justify-content: center;
+    width: 380px;
+    padding: 15px 10px;
+    border: 3px solid red;
+    border-radius: 50px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+    text-align: center;
+}
+
+.datetime:hover {
+    background: var(--clr-1);
+    box-shadow: 0 0 300px var(--clr-1);
+}
+
+.time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox1 {
+    display: none;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    top: 50px;
+    left: 50px;
+    border: 2px solid green;
+    position: absolute;
+    height: 22px;
+    width: 45px;
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s ease;
+}
+
+.checkbox1:checked+.label .ball {
+    transform: translateX(24px);
+}

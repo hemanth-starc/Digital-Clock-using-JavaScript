@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="stylepro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <script src="scriptpro.js" defer></script>
+</head>
+
+<body onload="initClock()">
+
+    <!-- code to show time -->
+    <div class="datetime">
+
+        <div id="time">
+            HH:MM:SS AM/PM
+        </div>
+    </div>
+    <!-- code to toggle light and dark mode -->
+    <div>
+        <input type="checkbox" class="checkbox1" id="chk" />
+        <label class="label" for="chk" title="click for dark/light mode">            
+            <div class="ball"></div>
+        </label>
+    </div>
+</body>
+
+</html>
